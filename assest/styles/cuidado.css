@@ -1,0 +1,29 @@
+.info {
+  background: linear-gradient(180deg, var(--cor-pricipal) 70%, #b3ded5 100%);
+}
+
+.info__cuidado {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10%;
+}
+
+.info_itens {
+  max-width: 500px;
+  color: var(--cor-fonte-secundaria);
+}
+
+.info_itens h1 {
+  font-weight: bold;
+  font-size: 30px;
+  padding: 0 0 1rem 0;
+}
+.info_itens p {
+  font-size: 18px;
+  max-width: 460px;
+}
+
+.info__img {
+  margin: 24px;
+}
