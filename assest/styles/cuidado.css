@@ -27,3 +27,56 @@
 .info__img {
   margin: 24px;
 }
+
+@media (max-width: 900px) {
+  .info__cuidado {
+    flex-direction: column;
+    gap: 32px;
+    padding: 24px 0;
+  }
+  .info_itens {
+    max-width: 90%;
+    text-align: center;
+  }
+  .info_itens h1 {
+    font-size: 24px;
+  }
+  .info_itens p {
+    font-size: 16px;
+    max-width: 100%;
+  }
+  .info__img {
+    margin: 0 auto 24px auto;
+    max-width: 320px;
+    width: 80%;
+    display: block;
+  }
+}
+
+/* Celular */
+@media (max-width: 600px) {
+  .info__cuidado {
+    flex-direction: column;
+    gap: 20px;
+    padding: 12px 0;
+  }
+  .info_itens {
+    max-width: 100%;
+    text-align: center;
+    padding: 0 8px;
+  }
+  .info_itens h1 {
+    font-size: 18px;
+    padding-bottom: 0.5rem;
+  }
+  .info_itens p {
+    font-size: 14px;
+    max-width: 100%;
+  }
+  .info__img {
+    margin: 0 auto 16px auto;
+    max-width: 220px;
+    width: 100%;
+    display: block;
+  }
+}

@@ -194,3 +194,57 @@
 .card:nth-child(4)::after {
   animation-delay: 4.5s;
 }
+
+
+@media (max-width: 900px) {
+  .problemas__solucao {
+    grid-template-columns: 1fr;
+    padding: 2rem 1rem;
+    gap: 2rem;
+  }
+  .card {
+    width: 90%;
+    margin: 2rem auto 0 auto;
+    padding: 2rem 1rem 2rem 1rem;
+  }
+  .icon {
+    max-width: 80px;
+    left: -2rem;
+  }
+  .card h3 {
+    font-size: 1.1rem;
+    left: 0.5rem;
+    top: -1rem;
+    padding: 0.3rem 0.8rem;
+  }
+}
+
+/* Celular */
+@media (max-width: 600px) {
+  .problemas__solucao {
+    grid-template-columns: 1fr;
+    padding: 1rem 4px;
+    gap: 1.2rem;
+  }
+  .card {
+    width: 98%;
+    margin: 1rem auto 0 auto;
+    padding: 1rem 4px 1rem 4px;
+    border-radius: 0.7rem;
+  }
+  .icon {
+    max-width: 56px;
+    left: -1rem;
+  }
+  .card h3 {
+    font-size: 0.95rem;
+    left: 0.3rem;
+    top: -0.7rem;
+    padding: 0.2rem 0.6rem;
+    border-radius: 0.7rem;
+  }
+  .text-content p {
+    padding: 0.5rem;
+    font-size: 0.95rem;
+  }
+}

@@ -204,3 +204,54 @@
     transform: translateY(0);
   }
 }
+
+
+@media (max-width: 900px) {
+  .formulario h2 {
+    font-size: 24px;
+    margin: 1.5rem;
+  }
+  .formulario__conteudo {
+    flex-direction: column;
+    gap: 24px;
+    align-items: center;
+    padding: 0 16px;
+  }
+  .formulario__preencher {
+    max-width: 90%;
+    padding: 16px 24px;
+  }
+}
+
+/* Celular */
+@media (max-width: 600px) {
+  .formulario h2 {
+    font-size: 18px;
+    margin: 1rem;
+  }
+  .formulario__conteudo {
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+    padding: 0 8px;
+  }
+  .formulario__preencher {
+    max-width: 100%;
+    padding: 12px 8px;
+    border-radius: 16px;
+  }
+  .form-group {
+    margin-bottom: 16px;
+  }
+  select,
+  input {
+    font-size: 15px;
+    padding: 12px 12px;
+    border-radius: 12px;
+  }
+  .botao {
+    font-size: 15px;
+    padding: 12px 12px;
+    border-radius: 12px;
+  }
+}
