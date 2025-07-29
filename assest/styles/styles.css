@@ -11,8 +11,9 @@
   box-sizing: border-box;
 }
 
+
 :root {
-  --cor-pricipal: #495057;
+  --cor-principal: #495057;
   --cor-secundaria: #000000;
   --cor-terciaria: #b3ded5;
   --cor-fonte-pricipal: #ffffff;
@@ -22,7 +23,7 @@
 
 body {
   color: var(--cor-fonte-pricipal);
-  background: var(--cor-pricipal);
+  background: var(--cor-principal);
   font-family: var(--fonte-montserrat);
 }
 
@@ -44,4 +45,15 @@ body {
   padding: 0;
   pointer-events: none;
   user-select: none;
+}
+
+@media screen and (max-width: 480px) {
+  .divisor {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+  }
+  
 }

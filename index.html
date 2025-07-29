@@ -1,221 +1,263 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MyPet - Pré-Lançamento</title>
+    <link rel="stylesheet" href="assest/styles/styles.css" />
+    <link rel="icon" href="assest/imgs/logoSimples.png" type="image/png" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>MyPet - Pré-Lançamento</title>
-  <link rel="stylesheet" href="assest/styles/styles.css" />
-  <link rel="icon" href="assest/imgs/favicon.png" type="image/png" />
-
-</head>
-
-<body>
-  <div class="header_img">
-    <img class="header__imagem" src="assest/imgs/header.png" alt="" />
-  </div>
-  <header class="header" id="home">
-
-    <div class="header__lista">
-      
-      <div class="logo">
-        <img class="header__logo" src="assest/imgs/logoSimples.png" alt="">
-      </div>
-      <input type="checkbox" id="menu-checkbox" />
+  <body>
+    <div class="header_img">
+      <img class="header__imagem" src="assest/imgs/header.png" alt="" />
+    </div>
+    <header class="header" id="home">
+      <div class="header__lista">
+        <div class="logo">
+          <img class="header__logo" src="assest/imgs/logoCompleta.png" alt="" />
+        </div>
+        <input type="checkbox" id="menu-checkbox" />
         <label for="menu-checkbox" class="menu-toggle">
           <span></span>
           <span></span>
           <span></span>
         </label>
-      <li class="header__itens">
-        <ul class="header__lista-itens">
-          <a href="#home">Home</a>
-        </ul>
-        <ul class="header__lista-itens">
-          <a href="#explore">Explore o recurso</a>
-        </ul>
-        <ul class="header__lista-itens">
-          <a href="#formulario" class="link-bg">Faça Parte</a>
-        </ul>
-      </li>
-    </div>
 
-    <div class="header__info">
-      <h1 class="header__titulo fade-up">
-        A agenda do seu pet, <br>
-        agora simples e descomplicada
-        <img src="assest/imgs/Vector 3.png" alt="" class="header__decoracao">
-      </h1>
-
-
-
-      <div class="header__texto fade-up" style="animation-delay: 0.3s">
-        <p>
-          O novo app para encontrar, comparar e agendar os melhores serviços para seu pet
-          em Curitiba e região Metropolitana. Simples, rápido e seguro. Embreve no seu celular!
-
-        </p>
-        <div class="header__botao fade-up" style="animation-delay: 0.6s">
-          <button>SOU TUTOR DE PET</button>
-          <button>SOU UM PET SHOP</button>
-        </div>
+        <nav class="header__item">
+          <ul class="header__itens">
+            <li class="header__lista-itens"><a href="#home">Home</a></li>
+            <li class="header__lista-itens">
+              <a href="#problemaSolucao">Explore o recurso</a>
+            </li>
+            <li class="header__lista-itens">
+              <a href="#formulario" class="link-bg">Faça Parte</a>
+            </li>
+          </ul>
+        </nav>
       </div>
-    </div>
-  </header>
-  <div class="divisor">
-    <img class="divisor__img" src="assest/imgs/Group 30.png" alt="">
-  </div>
 
-  <section class="info" id="explore">
-    <div class="info__cuidado">
-      <img class="info__img" src="assest/imgs/animais.png " alt="" />
-      <div class="info_itens">
-        <h1>
-          O cuidado que seu pet merece, na <strong>palma da sua mão</strong>.
+      <div class="header__info">
+        <h1 class="header__titulo fade-up">
+          A agenda do seu pet, <br />
+          agora simples e descomplicada
+          <img
+            src="assest/imgs/Vector 3.png"
+            alt=""
+            class="header__decoracao"
+          />
         </h1>
-        <p>
-          Imagine
-          <strong>encontrar, comparar e agendar os melhores banhos, tosas,
-            consultas e outros serviços
-          </strong>
-          em um só lugar. Com a confiança de avaliações de outros tutores e a
-          agilidade que a sua rotina pede. <strong>Isso é MyPet</strong>.
-        </p>
-      </div>
-    </div>
-  </section>
 
-  <div class="divisor">
-    <img class="divisor__img" src="assest/imgs/divisor de sectiona.png" alt="">
-  </div>
-  <section class="problemas__solucao">
-
-    <div class="card problema">
-      <h3>Atendimento demorado e sem retorno</h3>
-      <div class="content-wrapper">
-        <img src="assest/imgs/zap.png" alt="Ícone" class="icon" />
-        <div class="text-content">
+        <div class="header__texto fade-up" style="animation-delay: 0.3s">
           <p>
-            Chega de ligar para vários pet shops, aguardar respostas no
-            WhatsApp e ficar em dúvida sobre a confiabilidade do serviço.
-            Cuidar de quem amamos não deveria ser uma tarefa tão complicada!
+            O novo app para encontrar, comparar e agendar os melhores serviços
+            para seu pet em Curitiba e região Metropolitana. Simples, rápido e
+            seguro. <strong>Embreve no seu celular!</strong>
           </p>
+          <div class="header__botao fade-up" style="animation-delay: 0.6s">
+            <button onclick="selecionarPerfil('tutor')">
+              <a href="#formulario">SOU TUTOR DE PET</a>
+            </button>
+            <button onclick="selecionarPerfil('petshop')">
+              <a href="#formulario">SOU UM PET SHOP</a>
+            </button>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="card problema">
-      <h3>Dificuldade para comparar serviços</h3>
-      <div class="content-wrapper">
-        <img src="assest/imgs/avaliações.png" alt="Ícone" class="icon" />
-        <div class="text-content">
-          <p>
-            Acesse avaliações reais de outros tutores e compare preços e
-            qualificações dos profissionais. Com MyPet, você faz escolhas
-            informadas e seguras, garantindo o melhor para seu pet
-          </p>
-        </div>
-      </div>
-    </div>
-    <div class="card solucao">
-      <h3>Conexão fácil com profissionais de confiança</h3>
-      <div class="content-wrapper">
-        <img src="assest/imgs/selecao.png" alt="Ícone" class="icon" />
-        <div class="text-content">
-          <p>
-            Foi pensando nisso que criamos o MyPet: uma plataforma para
-            conectar você aos melhores profissionais da cidade. Agende tudo o
-            que seu pet precisa com a confiança e agilidade que vocês dois
-            merecem.
-          </p>
-        </div>
-      </div>
-    </div>
-    <div class="card solucao">
-      <h3>Tudo em um só lugar, rápido e prático</h3>
-      <div class="content-wrapper">
-        <img src="assest/imgs/verificar.png" alt="Ícone" class="icon" />
-        <div class="text-content">
-          <p>
-            Diga adeus às horas gastas pesquisando, comparando e ligando. Com
-            MyPet, todos os serviços e profissionais estão organizados em um
-            só lugar, poupando seu tempo precioso
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-
-  <section class="formulario" id="formulario">
+    </header>
     <div class="divisor">
-      <img class="divisor__img" src="assest/imgs/divisor3.png" alt="">
+      <img class="divisor__img" src="assest/imgs/Group 30.png" alt="" />
     </div>
-    <h2>Faça parte da revolução pet</h2>
-    <div class="formulario__conteudo">
-
-      <div class="formulario__info">
-        <form class="formulario__preencher" action="https://formsubmit.co/roblesthiaguinho@gmail.com" method="POST">
-          <h2>Cadastre-se</h2>
-
-          <div class="form-group">
-            <select name="Perfil" required>
-              <option value="">Selecione seu perfil</option>
-              <option value="tutor">Sou tutor</option>
-              <option value="petshop">Sou um pet shop</option>
-            </select>
-          </div>
-
-          <div class="form-group">
-            <input type="text" name="Nome" placeholder="Nome Completo" required />
-          </div>
-
-          <div class="form-group">
-            <input type="email" name="Email" placeholder="Seu e-mail" required />
-          </div>
-
-          <button type="submit" class="botao">Quero participar</button>
-        </form>
-
+    <section class="info">
+      <div class="divisor">
+        <img class="divisor__img" src="assest/imgs/Group 30.png" alt="" />
       </div>
-
-      <div class="formulario__imagens">
-        <img src="assest/imgs/lar.png" alt="Ilustração" />
+      <div class="info__cuidado">
+        <img class="info__img" src="assest/imgs/animais.png " alt="" />
+        <div class="info_itens">
+          <h1>
+            O cuidado que seu pet merece, na <strong>palma da sua mão</strong>.
+          </h1>
+          <p>
+            Imagine
+            <strong
+              >encontrar, comparar e agendar os melhores banhos, tosas,
+              consultas e outros serviços
+            </strong>
+            em um só lugar. Com a confiança de avaliações de outros tutores e a
+            agilidade que a sua rotina pede.
+            <strong>Isso a Conecta é MyPet</strong>.
+          </p>
+        </div>
       </div>
+    </section>
+    <div class="divisor2">
+      <img class="divisor__img2" src="assest/imgs/divisor2.png" alt="" />
     </div>
-  </section>
-  <div class="divisor"></div>
-  <img src="assest/imgs/Vector 9.png " alt="" class="divisor__img">
-  <!-- <section class="depoimentos">
-    <h2>O que os tutores estão dizendo</h2>
-    <div class="depoimento">
-      <img src="assest/imgs/depoimento1.png" alt="Foto do depoimento" />
-      <p>
-        "O MyPet facilitou minha vida! Agora consigo agendar tudo com apenas
-        alguns cliques. Recomendo a todos os tutores!"
-      </p>
-      <span>- Ana, Curitiba</span>
-    </div>
-    <div class="depoimento">
-      <img src="assest/imgs/depoimento2.png" alt="Foto do depoimento" />
-      <p>
-        "A plataforma é super intuitiva e me ajudou a encontrar o melhor
-        profissional para o meu pet. Estou muito satisfeita!"
-      </p>
-      <span>- João, Curitiba</span>
-    </div>
-  </section>  -->
+    <section class="problemas__solucao" id="problemaSolucao">
+      <div class="card problema">
+        <h3>Atendimento demorado e sem retorno</h3>
+        <div class="content-wrapper">
+          <img src="assest/imgs/zap.png" alt="Ícone" class="icon" />
+          <div class="text-content">
+            <p>
+              Chega de ligar para vários pet shops, aguardar respostas no
+              WhatsApp e ficar em dúvida sobre a confiabilidade do serviço.
+              Cuidar de quem amamos não deveria ser uma tarefa tão complicada!
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="card problema">
+        <h3>Dificuldade para comparar serviços</h3>
+        <div class="content-wrapper">
+          <img src="assest/imgs/avaliações.png" alt="Ícone" class="icon" />
+          <div class="text-content">
+            <p>
+              Acesse avaliações reais de outros tutores e compare preços e
+              qualificações dos profissionais. Com MyPet, você faz escolhas
+              informadas e seguras, garantindo o melhor para seu pet
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="card solucao">
+        <h3>Conexão fácil com profissionais de confiança</h3>
+        <div class="content-wrapper">
+          <img src="assest/imgs/selecao.png" alt="Ícone" class="icon" />
+          <div class="text-content">
+            <p>
+              Foi pensando nisso que criamos o MyPet: uma plataforma para
+              conectar você aos melhores profissionais da cidade. Agende tudo o
+              que seu pet precisa com a confiança e agilidade que vocês dois
+              merecem.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="card solucao">
+        <h3>Tudo em um só lugar, rápido e prático</h3>
+        <div class="content-wrapper">
+          <img src="assest/imgs/verificar.png" alt="Ícone" class="icon" />
+          <div class="text-content">
+            <p>
+              Diga adeus às horas gastas pesquisando, comparando e ligando. Com
+              MyPet, todos os serviços e profissionais estão organizados em um
+              só lugar, poupando seu tempo precioso
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-  <footer class="rodape">
-    <img src="assest/imgs/logoCompleta.png" alt="Logo MyPet" class="rodape__logo" />
-    <p>MyPet App © 2025 – Feito com amor em Curitiba.</p>
-    <div class="rodape__social">
-      <a href="https://instagram.com/conecta_my_pet" target="_blank"><img src="assest/imgs/instagram.png"
-          alt="">Instagram</a>
-      <a href="" target="_blank"><img src="assest/imgs/whatsapp.png" alt="">WhatsApp</a>
-    </div>
-  </footer>
+    <section class="formulario" id="formulario">
+      <div class="divisor">
+        <img class="divisor__img div-img" src="assest/imgs/divisor3.png" alt="" />
+      </div>
+      <h2>Faça parte da revolução pet</h2>
+      <div class="formulario__conteudo">
+        <div class="formulario__info">
+          <form
+            class="formulario__preencher"
+            action="https://formsubmit.co/contato@conectamypet.com.br"
+            method="POST"
+          >
+            <h2>Cadastre-se</h2>
 
-  <script src="script.js"></script>
-</body>
+            <div class="form-group">
+              <form id="formulario">
+                <select name="Perfil" id="perfilSelect" required>
+                  <option value="">Selecione seu perfil</option>
+                  <option value="tutor">Sou tutor</option>
+                  <option value="petshop">Sou um pet shop</option>
+                </select>
+              </form>
+            </div>
 
+            <div class="form-group">
+              <input
+                type="text"
+                name="Nome"
+                placeholder="Nome Completo"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <input
+                type="email"
+                name="Email"
+                placeholder="Seu e-mail"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <input
+                type="tel"
+                name="Telefone"
+                placeholder="Seu telefone com DDD"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label class="from-gruop__contato" style="color: #555">Como prefere o contato?</label>
+              <div">
+              <div
+                style="margin-bottom: 10px; display: flex; align-items: center"
+              >
+                <input
+                  type="checkbox"
+                  id="pref-email"
+                  name="Preferencia"
+                  value="E-mail"
+                  style="width: 16px; height: 16px; margin-right: 8px"
+                />
+                <label for="pref-email" style="color: #555">E-mail</label>
+              </div>
+              <div style="display: flex; align-items: center">
+                <input
+                  type="checkbox"
+                  id="pref-whatsapp"
+                  name="Preferencia"
+                  value="WhatsApp"
+                  style="width: 16px; height: 16px; margin-right: 8px"
+                />
+                <label for="pref-whatsapp" style="color: #555">WhatsApp</label>
+              </div>
+            </div>
+            <button type="submit" class="botao">Quero participar</button>
+          </form>
+        </div>
+
+        <div class="formulario__imagens">
+          <img
+            class="formulario__img"
+            src="assest/imgs/lar.png"
+            alt="Ilustração"
+          />
+        </div>
+      </div>
+    </section>
+    <div class="divisor"></div>
+    <img src="assest/imgs/Vector 9.png " alt="" class="divisor__img" />
+
+    <footer class="rodape">
+      <img
+        src="assest/imgs/logoCompleta.png"
+        alt="Logo MyPet"
+        class="rodape__logo"
+      />
+      <p>MyPet App © 2025 – Feito com amor em Curitiba.</p>
+      <div class="rodape__social">
+        <a href="https://instagram.com/conecta_my_pet" target="_blank"
+          ><img src="assest/imgs/instagram.png" alt="" />Instagram</a
+        >
+        <a href="contato@conectamypet.com.br" target="_blank"
+          ><img src="assest/imgs/email.png" alt="" />E-mail</a
+        >
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
 </html>
