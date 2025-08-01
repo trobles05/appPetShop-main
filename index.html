@@ -150,89 +150,97 @@
       </div>
     </section>
 
-  <section class="formulario" id="formulario">
-  <div class="divisortre">
-    <img class="divisor__img" src="assest/imgs/divisor3.png" alt="Divisor visual" />
-  </div>
+    <section class="formulario" id="formulario">
+      <div class="divisortre">
+        <img
+          class="divisor__img"
+          src="assest/imgs/divisor3.png"
+          alt="Divisor visual"
+        />
+      </div>
 
-  <div class="formulario__conteudo">
-    <div class="formulario__info">
-      <form
-        class="formulario__preencher"
-        action="https://formsubmit.co/contato@conectamypet.com.br"
-        method="POST"
-      >
-        <h2>Cadastre-se</h2>
+      <div class="formulario__conteudo">
+        <div class="formulario__info">
+          <form
+            class="formulario__preencher"
+            action="https://formsubmit.co/contato@conectamypet.com.br"
+            method="POST"
+          >
+            <h2>Cadastre-se</h2>
 
-        <div class="form-group">
-          <select name="Perfil" id="perfilSelect" required>
-            <option value="">Selecione seu perfil</option>
-            <option value="tutor">Sou tutor</option>
-            <option value="petshop">Sou um pet shop</option>
-          </select>
+            <div class="form-group">
+              <select name="Perfil" id="perfilSelect" required>
+                <option value="">Selecione seu perfil</option>
+                <option value="tutor">Sou tutor</option>
+                <option value="petshop">Sou um pet shop</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <input
+                type="text"
+                name="Nome"
+                placeholder="Nome Completo"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <input
+                type="email"
+                name="Email"
+                placeholder="Seu e-mail"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <input
+                type="tel"
+                name="Telefone"
+                placeholder="Seu telefone com DDD"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label class="from-group__contato" style="color: #555"
+                >Como prefere o contato?</label
+              >
+              <div
+                style="margin-bottom: 10px; display: flex; align-items: center"
+              >
+                <input
+                  type="checkbox"
+                  id="pref-email"
+                  name="Preferencia"
+                  value="E-mail"
+                  style="width: 16px; height: 16px; margin-right: 8px"
+                />
+                <label for="pref-email" style="color: #555">E-mail</label>
+              </div>
+              <div style="display: flex; align-items: center">
+                <input
+                  type="checkbox"
+                  id="pref-whatsapp"
+                  name="Preferencia"
+                  value="WhatsApp"
+                  style="width: 16px; height: 16px; margin-right: 8px"
+                />
+                <label for="pref-whatsapp" style="color: #555">WhatsApp</label>
+              </div>
+            </div>
+
+            <button type="submit" class="botao">Quero participar</button>
+          </form>
         </div>
-
-        <div class="form-group">
-          <input
-            type="text"
-            name="Nome"
-            placeholder="Nome Completo"
-            required
-          />
-        </div>
-
-        <div class="form-group">
-          <input
-            type="email"
-            name="Email"
-            placeholder="Seu e-mail"
-            required
-          />
-        </div>
-
-        <div class="form-group">
-          <input
-            type="tel"
-            name="Telefone"
-            placeholder="Seu telefone com DDD"
-            required
-          />
-        </div>
-
-        <div class="form-group">
-          <label class="from-group__contato" style="color: #555">Como prefere o contato?</label>
-          <div style="margin-bottom: 10px; display: flex; align-items: center">
-            <input
-              type="checkbox"
-              id="pref-email"
-              name="Preferencia"
-              value="E-mail"
-              style="width: 16px; height: 16px; margin-right: 8px"
-            />
-            <label for="pref-email" style="color: #555">E-mail</label>
-          </div>
-          <div style="display: flex; align-items: center">
-            <input
-              type="checkbox"
-              id="pref-whatsapp"
-              name="Preferencia"
-              value="WhatsApp"
-              style="width: 16px; height: 16px; margin-right: 8px"
-            />
-            <label for="pref-whatsapp" style="color: #555">WhatsApp</label>
-          </div>
-        </div>
-
-        <button type="submit" class="botao">Quero participar</button>
-      </form>
-  </div>
-  <img
-        class="formulario__img"
-        src="assest/imgs/lar.png"
-        alt="Ilustração"
-      />
-    </div>
-</section>
+        <img
+          class="formulario__img"
+          src="assest/imgs/lar.png"
+          alt="Ilustração"
+        />
+      </div>
+    </section>
 
     <div class="divisor"></div>
     <img src="assest/imgs/Vector 9.png " alt="" class="divisor__img" />
@@ -248,8 +256,8 @@
         <a href="https://instagram.com/conecta_my_pet" target="_blank"
           ><img src="assest/imgs/instagram.png" alt="" />Instagram</a
         >
-        <a href="contato@conectamypet.com.br" target="_blank"
-          ><img src="assest/imgs/email.png" alt="" />E-mail</a
+        <a href="mailto:contato@conectamypet.com.br" target="_blank">
+          <img src="assest/imgs/email.png" alt="" />E-mail</a
         >
       </div>
     </footer>
