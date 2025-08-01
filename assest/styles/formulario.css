@@ -296,12 +296,9 @@
     padding: 8px 4px;
     border-radius: 12px;
   }
-  .formulario__imagem{
-    max-width: 90%;
-  }
-  .formulario__imagem img {
-    width: 100%;
-  }
+ .formulario__img{
+  max-width: 55%;
+ }
   .form-group {
      max-width: 100%;
     padding: 4px 4px;
