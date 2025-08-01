@@ -1,5 +1,9 @@
 .formulario {
-  background-color: var(--cor-secundaria);
+  background: linear-gradient(
+    180deg,
+    var(--cor-principal) 0%,
+    var(--cor-secundaria) 2%
+  );
 }
 
 .formulario h2 {
@@ -23,8 +27,8 @@
   background: rgba(255, 255, 255, 0.95);
   backdrop-filter: blur(10px);
   border-radius: 20px;
-  padding: 40px;
-  width: 100%;
+  padding: 22px;
+  margin: 32px;
   max-width: 450px;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
   border: 1px solid rgba(255, 255, 255, 0.2);
@@ -278,6 +282,10 @@
     margin: 1rem;
   }
 
+  .formulario__info{
+    margin: 2rem;
+  }
+
   .formulario__conteudo {
     flex-direction: column;
     gap: 12px;
@@ -288,8 +296,11 @@
     padding: 8px 4px;
     border-radius: 12px;
   }
-  .formulario__imagens img {
-    width: 70%;
+  .formulario__imagem{
+    max-width: 90%;
+  }
+  .formulario__imagem img {
+    width: 100%;
   }
   .form-group {
      max-width: 100%;

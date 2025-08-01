@@ -50,6 +50,7 @@
 
 @media (max-width: 900px) {
   .info__cuidado {
+    justify-content: center;
     flex-direction: column;
     gap: 32px;
     padding: 24px 0;
@@ -64,6 +65,7 @@
   .info_itens p {
     font-size: 16px;
     max-width: 100%;
+    margin: 0 3rem;
   }
   .info__img {
     margin: 0 auto 24px auto;
