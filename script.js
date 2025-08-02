@@ -23,10 +23,25 @@ link3.addEventListener('click', () => {
     scrollToElement('#formulario');
 });
  
- function selecionarPerfil(valor) {
+//  function selecionarPerfil(valor) {
   
-    setTimeout(() => {
+//     setTimeout(() => {
+//       const select = document.getElementById("perfilSelect");
+//       select.value = valor;
+//     }, 150);
+//   }
+
+ function selecionarPerfil(valor) {
+    const tentarSelecionar = () => {
       const select = document.getElementById("perfilSelect");
-      select.value = valor;
-    }, 150);
+
+      if (select) {
+        select.value = valor;
+      } else {
+        // Continua tentando até o select aparecer
+        setTimeout(tentarSelecionar, 100);
+      }
+    };
+
+    tentarSelecionar();
   }
